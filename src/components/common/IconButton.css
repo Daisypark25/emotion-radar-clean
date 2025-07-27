@@ -1,0 +1,29 @@
+.icon-button {
+  display: none; /* 기본적으로 데스크탑에서는 숨김 */
+}
+
+@media (max-width: 768px) {
+  .icon-button {
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.icon-button-wrapper {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2000;
+}
+
+@media (min-width: 768px) {
+  .icon-button-wrapper {
+    display: none;
+  }
+}

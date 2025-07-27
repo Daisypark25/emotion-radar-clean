@@ -1,0 +1,26 @@
+.tag {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  .tag-stress {
+    background: #ecf7ec;
+    color: #226025;
+    padding: 2px 8px;
+  }
+  
+  .tag-anxiety {
+    background: #fee8e7;
+    color: #b8403a;
+    padding: 2px 8px;
+  }
+  
+  .tag-relationship {
+    background: #ffefe0;
+    color: #cb802f;
+    padding: 2px 8px;
+  }

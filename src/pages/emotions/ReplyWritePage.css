@@ -1,0 +1,6 @@
+.reply-write-container {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh; 
+  background-color: white;
+}

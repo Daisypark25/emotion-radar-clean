@@ -1,0 +1,280 @@
+.therapist-summary p,
+.therapist-about p,
+.therapist-consulting-info p {
+  margin: 0.25rem 0; /* 4px → 0.25rem */
+}
+
+.fixed-booking-bar {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  border-top: 0.0625rem solid #e1e1e1; /* 1px → 0.0625rem */
+  z-index: 1000;
+}
+
+.fixed-booking-bar .container {
+  max-width: 48rem;  /* 768px → 48rem */
+  margin: 0 auto;
+  padding: 0.75rem 1.25rem; /* 12px 20px → 0.75rem 1.25rem */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.therapist-booking {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+}
+
+.therapist-booking button {
+  background-color: black;
+  width: 60%;
+  color: white;
+  padding: 0.75rem 1rem; /* 12px 16px → 0.75rem 1rem */
+  border-radius: 0.375rem; /* 6px → 0.375rem */
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.price-value {
+  font-size: 1.1rem; 
+  font-weight: 700;
+  color: #000;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 0.0625rem solid #E1E1E1;
+  margin: 1.5rem 0; /* 24px → 1.5rem */
+}
+
+.section-title {
+  font-size: 1.125rem; /* 18px → 1.125rem */
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+  margin-bottom: 0.5rem; /* 8px → 0.5rem */
+}
+
+.section-description {
+  font-size: 0.875rem; /* 14px → 0.875rem */
+  font-weight: 400;
+  color: #757575;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0; /* 8px → 0.5rem */
+  border-bottom: 0.0625rem solid #e1e1e1;
+}
+
+.item-label {
+  font-size: 0.9375rem; /* 15px → 0.9375rem */
+  font-weight: 500;
+  color: #333;
+}
+
+.item-value {
+  font-size: 0.875rem;
+  color: #555;
+}
+
+
+
+
+/* 기본 정보 영역 */
+.therapist-basic-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* 16px → 1rem */
+  padding: 0;
+}
+
+.therapist-image {
+  width: 4.5rem; /* 72px → 4.5rem */
+  height: 4.5rem;
+  border-radius: 0.75rem; /* 12px → 0.75rem */
+  object-fit: cover;
+}
+
+.therapist-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem; /* 4px → 0.25rem */
+}
+
+.name-row {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem; /* 8px → 0.5rem */
+}
+
+.name-row h2 {
+  font-size: 1.25rem; /* 20px → 1.25rem */
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+}
+
+.certified-badge {
+  width: 1.125rem; /* 18px → 1.125rem */
+  height: 1.125rem;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem; /* 6px → 0.375rem */
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #757575;
+}
+
+.dot {
+  font-size: 0.5rem; /* 8px → 0.5rem */
+  line-height: 0.875rem; /* 14px → 0.875rem */
+}
+
+.rating-row {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.8125rem; /* 13px → 0.8125rem */
+  color: #757575;
+}
+
+.star-icon {
+  width: 0.875rem; /* 14px → 0.875rem */
+  height: 0.875rem;
+}
+
+/* summary 전체 영역 */
+.therapist-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.summary-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem; /* 12px → 0.75rem */
+}
+
+.summary-icon {
+  width: 1.25rem; /* 20px → 1.25rem */
+  height: 1.25rem;
+  flex-shrink: 0;
+}
+
+.summary-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+}
+
+
+
+/* speciality 전체 영역 */
+.therapist-speciality {
+  display: flex;
+  flex-direction: column;
+}
+
+.therapist-consulting-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.therapist-detail-section {
+  margin-bottom: 1.5rem;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0;
+}
+
+.detail-label {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #333;
+  width: 7.5rem; /* 120px → 7.5rem */
+}
+
+.detail-value {
+  font-size: 0.875rem;
+  font-weight: 450;
+  color: #555;
+  flex: 1;
+  text-align: right;
+}
+
+/* reviews 전체 영역 */
+.review-card {
+  min-width: 13.75rem; /* 220px → 13.75rem */
+  border: 0.0625rem solid #e1e1e1;
+  border-radius: 0.5rem; /* 8px → 0.5rem */
+  padding: 1rem;
+  background-color: #fff;
+  flex-shrink: 0;
+}
+
+.reviews-container {
+  margin-top: 0.5rem;
+}
+
+.review-nickname {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: black;
+  margin-bottom: 0.375rem;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  margin-bottom: 0.5rem;
+}
+
+.review-stars {
+  display: flex;
+  gap: 0.125rem;
+}
+
+.star {
+  color: #e1e1e1;
+  font-size: 0.875rem;
+}
+
+.star.filled {
+  color: #fbc900;
+}
+
+.review-date {
+  font-size: 0.75rem;
+  color: #757575;
+}
+
+.review-comment {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: black;
+  line-height: 1.375rem;
+}

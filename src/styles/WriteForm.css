@@ -1,0 +1,31 @@
+.write-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .write-input-title {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .write-textarea {
+    flex: 1;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: none;
+  }
+  
+  .write-input-title:focus,
+  .write-textarea:focus {
+    outline: none;
+    border-color: #999;
+  }

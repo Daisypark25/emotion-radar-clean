@@ -1,0 +1,128 @@
+.story-card {
+  background-color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.story-card.clickable {
+  cursor: pointer;
+}
+
+.story-card:not(.clickable) {
+  cursor: default;
+}
+
+.story-card .story-menu {
+  cursor: pointer;
+}
+
+
+
+/* 상단 프로필 영역 */
+.story-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+/* 이모지 + 닉네임 + 유저명 */
+.story-profile {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.story-emoji {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.story-nickname {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.nickname-time {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #888;
+  font-size: 13px;
+}
+
+.nickname-time .nickname {
+  font-weight: 500;
+}
+
+.nickname-time .dot {
+  margin: 0 2px;
+}
+
+.nickname-time .time {
+  font-weight: 400;
+}
+
+/* 본문 */
+.story-body {
+  margin: 12px 0;
+}
+
+.story-subject {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.story-text {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+}
+
+
+.story-text.clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+/* 하단 아이콘 영역 */
+.story-footer {
+  display: flex;
+  gap: 20px;
+  color: #999;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.story-icon {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+
+.like-icon {
+  position: relative;
+}
+
+
+.like-icon.bounce svg {
+  animation: soft-bounce 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes soft-bounce {
+  0%   { transform: scale(1); }
+  30%  { transform: scale(0.85); }
+  60%  { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}

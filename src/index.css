@@ -1,0 +1,289 @@
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #111;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+
+
+.emotion-background {
+  position: fixed;          
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;              
+  overflow: hidden;
+  transition: background-color 0.5s ease;
+}
+
+.emotion-pattern-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  gap: 80px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.grid-cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.floating-emoji {
+  width: 80px;
+  height: 80px;
+  opacity: 0.5;
+  animation: floatRandom 6s ease-in-out infinite alternate;
+}
+
+@keyframes floatRandom {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(4px, -4px);
+  }
+}
+
+
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.container {
+  width: 600px;
+  max-width: 100%;
+  background-color: white;
+  border-radius: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.container-inner {
+  width: 100%;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  flex: 1;
+  overflow-y: auto;
+}
+
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding-bottom: 64px;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+
+.scroll-content {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  padding-bottom: 6rem;
+  height: 100%;
+}
+
+
+
+.page-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 3rem; 
+  margin-bottom: 0.5rem;
+}
+
+.page-header-back {
+  position: absolute;
+  left: 0;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.page-header-title {
+  margin: 0 auto;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 680;
+  margin-top: 0.5rem;
+  margin-bottom: 0rem;
+}
+
+.page-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.3rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+
+
+
+/* 📱 모바일 대응 */
+@media (max-width: 480px) {
+  html, body {
+    display: block;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #root {
+    height: 100dvh;
+  }
+
+  .container {
+    width: 100vw;
+    height: 100dvh;
+    min-height: 100dvh;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .content {
+    width: 100vw;
+    overflow-y: auto;
+    padding-bottom: 64px;
+  }
+
+
+
+  .scroll-content {
+    overflow-y: auto;
+    height: 100%;
+    padding-bottom: 6rem;
+  }
+
+  .container-inner {
+    padding: 1.2rem;
+  }
+}
+
+
+
+/* 💻 태블릿 이상 */
+@media (min-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+.skeleton-card {
+  height: 100px;
+  background-color: #f1f1f1;
+  border-radius: 12px;
+  margin-bottom: 0.75rem;
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #f1f1f1;
+  }
+  50% {
+    background-color: #e4e4e4;
+  }
+  100% {
+    background-color: #f1f1f1;
+  }
+}
+
+.skeleton-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+
+
+
+.floating-footer-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  padding: 0rem 1rem 1.5rem 1rem;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+}
+
+.floating-footer-wrapper.has-bottom-nav {
+  padding-bottom: 5rem; 
+}
+
+.floating-footer-wrapper.standalone {
+  padding-bottom: 2.5rem;
+}
+
+.floating-footer-wrapper.has-bottom-nav.standalone {
+  padding-bottom: 7rem;
+}
+
+.floating-footer-wrapper .fade-overlay {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background: linear-gradient(to top, white 0%, rgba(255,255,255,0) 100%);
+  pointer-events: none;
+}

@@ -1,0 +1,14 @@
+  .switch-text {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .link {
+    color: black;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    cursor: pointer;
+  }

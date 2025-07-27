@@ -1,0 +1,23 @@
+.story-detail {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.container.story-detail .container-inner {
+  padding-top: 0;
+}
+
+.replys-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 1.2rem;
+}
+
+.story-detail-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

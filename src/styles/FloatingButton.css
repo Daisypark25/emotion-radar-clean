@@ -1,0 +1,82 @@
+.floating-button-wrapper {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  z-index: 10;
+}
+
+/* 하단 탭 있는 경우 */
+.floating-button-wrapper.has-bottom-nav {
+  bottom: 1.5rem;
+}
+
+/* 작은 버튼 */
+.floating-button-wrapper.small {
+  width: auto;
+  left: auto;
+  right: 1.2rem;
+}
+
+/* 인풋바 스타일 */
+.floating-button-wrapper.input-bar {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  padding: 12px 16px;
+  font-size: 15px;
+  border-radius: 10px;
+  color: #333;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.floating-button-wrapper.input-bar button {
+  background: none;
+  color: #333;
+  box-shadow: none;
+}
+
+/* 버튼 스타일 */
+.floating-button-wrapper button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+.floating-button-wrapper button.secondary-btn {
+  background: white;
+  color: black;
+  border: 1px solid #777;
+  font-weight: 500;
+}
+
+
+/* ✅ 모바일에서만 fixed 고정 */
+@media (max-width: 480px) {
+  .floating-button-wrapper {
+    position: fixed;
+    left: 1.2rem;
+    right: 1.2rem;
+    bottom: 1.5rem;
+    z-index: 100;
+  }
+
+  .floating-button-wrapper.has-bottom-nav {
+    bottom: 5rem;
+  }
+
+  .floating-button-wrapper.standalone {
+    bottom: 3rem;
+  }
+
+  .floating-button-wrapper.standalone.has-bottom-nav {
+    bottom: 7rem;
+  }
+}
+
+
+

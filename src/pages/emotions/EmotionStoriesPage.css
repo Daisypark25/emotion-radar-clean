@@ -1,0 +1,108 @@
+.container.stories {
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.container.stories .container-inner {
+  padding-top: 0.3rem;
+}
+
+
+.emotion-stories-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.emotion-stories-list .story-card {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 
+    opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), 
+    transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+
+
+  
+.emotion-stories-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  margin-bottom: 0.5rem;
+}
+
+.emotion-stories-back {
+  position: absolute;
+  left: 0;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.emotion-stories-title {
+  margin: 0 auto;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.emotion-stories-write-button {
+    position: absolute;
+    bottom: 5rem;
+    right: 16px;
+    padding: 14px 24px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    cursor: pointer;
+}
+  
+
+  .emotion-stories-toast {
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10px;
+    font-size: 14px;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    animation: fadeInOut 2s ease forwards;
+  }
+  
+
+  .emotion-stories-loading {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+    color: #888;
+  }
+  
+
+  @keyframes fadeInOut {
+    0% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+    10% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    90% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    100% { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+  }
+

@@ -1,0 +1,11 @@
+.story-write-container {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh; 
+  background-color: white;
+}
+
+.story-write-page .content {
+  padding-bottom: 0 !important;
+}
+

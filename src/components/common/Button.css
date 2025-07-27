@@ -1,0 +1,68 @@
+.btn {
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;       
+  align-items: center;
+  justify-content: center;
+  gap: 8px; 
+  line-height: 1;                 
+}
+
+.btn.loading {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* 타입 */
+.primary-btn {
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  border: none;
+  width: 100%;
+}
+
+
+.secondary-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  font-weight: 500;
+  width: 100%;
+}
+
+.ghost-btn {
+  background-color: transparent;
+  color: #3b82f6;
+  border: none;
+}
+
+/* 크기 */
+
+.xs-btn {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.sm-btn {
+  padding: 6px 12px;
+  font-size: 0.875rem;
+}
+
+.md-btn {
+  padding: 12px 18px;
+  font-size: 1rem;
+}
+
+.lg-btn {
+  padding: 14px 20px;
+  font-size: 1.125rem;
+}
+
+
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.2rem; 
+}

@@ -1,0 +1,93 @@
+.container.my-page {
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  height: 100%;
+}
+
+.my-loading {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #e1e1e1;
+  border-top-color: #333;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.my-user h2 {
+  font-size: 28px;
+  color: #2a2a2a;
+  font-weight: 700;
+}
+
+.my-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.my-list-item {
+  width: 100%;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 16px;
+  font-weight: 510;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+
+
+
+.service-info {
+  margin-top: 2rem;
+}
+
+.service-title {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.service-title svg {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.service-description {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #666;
+  margin: 0;
+}
+
+.service-card {
+  margin-top: 1rem;
+  background: #f5f5f5;
+  padding: 0.4rem 0.6rem;
+  border-radius: 16px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #ddd; 
+  margin-top: 4rem;
+}
+

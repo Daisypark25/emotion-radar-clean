@@ -1,0 +1,38 @@
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-label {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #444;
+}
+
+.input-field {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  font-family: inherit; 
+}
+
+.input-field:focus {
+  border-color: #333;
+}
+
+.input-field.input-error {
+  border-color: red;
+}
+
+.input-field.input-error:focus {
+  border-color: red;
+}
+
+.input-error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 4px;
+  margin-left: 4px;
+}

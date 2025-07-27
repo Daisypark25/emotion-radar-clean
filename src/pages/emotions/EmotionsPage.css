@@ -1,0 +1,64 @@
+.container.emotions {
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  height: 100%;
+}
+  
+  .emotions-emotion-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    cursor: pointer;
+  }
+  
+  .emotions-emotion-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 1.2rem 1rem;
+    border-radius: 12px;
+  }
+  
+  .emotions-emotion-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .emotions-emotion-icon {
+    width: 42px;
+    height: 42px;
+  }
+  
+  .emotions-emotion-name {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .emotions-emotion-count {
+    font-size: 13px;
+    color: #6d6d6d;
+  }
+  
+  .count-number {
+    font-weight: 500;
+    color: #333;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* 👈 아래에서 시작 */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in-up {
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+  }
