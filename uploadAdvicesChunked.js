@@ -14,7 +14,7 @@ import {
 
 // ✅ Firebase 설정
 const firebaseConfig = {
-  apiKey: "AIzaSyDvQRxUBoGelZWtl82sCEChOhl32is2mp8",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "radar-40056.firebaseapp.com",
   projectId: "radar-40056"
 };
