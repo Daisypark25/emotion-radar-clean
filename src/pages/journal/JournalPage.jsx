@@ -139,7 +139,7 @@ function JournalPage({ setSelectedEmotion, hideBottomNav }) {
         });
 
 
-        const response = await fetch("https://emotion-radar-backend.onrender.com/generate-gemini-advice", {
+        const response = await fetch("https://emotion-radar-backend-clean.onrender.com/generate-gemini-advice", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
