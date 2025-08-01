@@ -62,6 +62,7 @@
 .advice-text p {
   font-size: 1rem;
   font-weight: 450;
+  line-height: 1.6;
   color: #555;
   margin: 0;
 }
