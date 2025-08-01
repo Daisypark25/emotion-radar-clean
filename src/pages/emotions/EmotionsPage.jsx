@@ -45,7 +45,7 @@ function EmotionsPage({ setSelectedEmotion }) {
 
 
   useEffect(() => {
-    fetch("https://emotion-radar-backend.onrender.com/api/emotion-counts")
+    fetch("https://emotion-radar-backend-clean.onrender.com/api/emotion-counts")
       .then((res) => res.json())
       .then((data) => {
         setEmotionCount(data); 
